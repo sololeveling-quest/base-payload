@@ -2,6 +2,8 @@
 
 `base-payload` is PayloadCMS configured with default TailwindCSS. 
 
+Reference: https://tailwindcss.com/docs/guides/nextjs
+
 ## How I setup this basecode?
 
 ```shell
@@ -30,6 +32,14 @@ create file `globals.css` with the following content:
 @tailwind components;
 @tailwind utilities;
 ```
+
+Enable `standalone` output to align with the Dockerfile setup. Edit file `next.config.mjs`:
+```javascript
+...
+ output: 'standalone',
+...
+```
+Read more https://nextjs.org/docs/app/api-reference/config/next-config-js/output
 
 ## What If I want to update PayloadCMS to latest version?
 
