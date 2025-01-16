@@ -20,6 +20,7 @@ export const Users: CollectionConfig = {
             email,
             password,
             name,
+            role: 'member',
           },
         })
         return Response.json({
