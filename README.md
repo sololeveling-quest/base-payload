@@ -10,7 +10,7 @@ pnpm install -D tailwindcss postcss autoprefixer
 pnpm dlx tailwindcss init -p
 ```
 
-edit `tailwind.config.js`
+edit file `tailwind.config.js`:
 ```
 ...
     content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"]
@@ -24,7 +24,7 @@ cd '(my-app)'
 touch globals.css
 ```
 
-`globals.css` file content
+create file `globals.css` with the following content:
 ```css
 @tailwind base;
 @tailwind components;
