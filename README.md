@@ -39,7 +39,27 @@ Enable `standalone` output to align with the Dockerfile setup. Edit file `next.c
  output: 'standalone',
 ...
 ```
-Read more https://nextjs.org/docs/app/api-reference/config/next-config-js/output
+Read more about `standalone` https://nextjs.org/docs/app/api-reference/config/next-config-js/output
+
+Then I use GitHub CLI to create the repository.
+
+```shell
+cd ~/base-payload
+
+git init
+
+gh repo create sololeveling-quest/base-payload --public
+
+git remote add origin git@github.com:sololeveling-quest/base-payload.git
+
+git branch -M main
+
+git add .
+
+git commit -am 'init'
+
+git push -u origin main
+```
 
 ## What If I want to update PayloadCMS to latest version?
 
@@ -47,6 +67,7 @@ Read more https://nextjs.org/docs/app/api-reference/config/next-config-js/output
 pnpm -g npm-check
 npm-check -u
 ```
+
 
 ## Attributes
 
