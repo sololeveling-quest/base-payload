@@ -7,6 +7,7 @@ on:
     paths:
       - 'src/**' # Trigger only when code in src directory changes
       - 'public/**' # Trigger only when code in public directory changes
+      - Dockerfile # Trigger only when Dockerfile changes
 
 jobs:
   build:
