@@ -4,6 +4,7 @@ export const Users: CollectionConfig = {
   slug: 'users',
   admin: {
     useAsTitle: 'email',
+    group: 'General',
   },
   auth: true,
   endpoints: [
@@ -44,7 +45,7 @@ export const Users: CollectionConfig = {
       name: 'role',
       type: 'select',
       options: [
-        { label: 'Admin', value: 'admin' },
+        { label: 'Viewer', value: 'viewer' },
         { label: 'Member', value: 'member' },
       ],
       defaultValue: 'member',
