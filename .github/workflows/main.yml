@@ -6,6 +6,7 @@ on:
       - main 
     paths:
       - 'src/**' # Trigger only when code in src directory changes
+      - 'public/**' # Trigger only when code in public directory changes
 
 jobs:
   build:
