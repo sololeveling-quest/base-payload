@@ -8,6 +8,7 @@ on:
       - 'src/**' # Trigger only when code in src directory changes
       - 'public/**' # Trigger only when code in public directory changes
       - Dockerfile # Trigger only when Dockerfile changes
+      - package.json # Trigger only when package.json changes
 
 jobs:
   build:
